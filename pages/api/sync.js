@@ -33,7 +33,7 @@ const sectionSync = async (req, res) => {
 
         const questions = await questionsRequest.json();
 
-        res.json({ questions: questions });
+        res.json({ questions: "questions" });
       } catch (error) {
         res.status(400).json({ code: error.code, message: error.message });
       }
