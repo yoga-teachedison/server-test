@@ -1,3 +1,16 @@
+import fetch from "node-fetch";
+
+// const options = {
+//   hostname: 'https://edisonapi-stage.herokuapp.com',
+//   path: '/api/users/assessments-sessions/render/',
+//   method: 'POST',
+//   headers: {
+//     'Content-Type': 'application/json',
+//     Authorization:
+//                 "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY5OTIxNjMzLCJpYXQiOjE2NjkzMTY4MzMsImp0aSI6IjlkYzY0ZDdkNzY1NDRhMDI5ZTdhYTgyNjcwZWY4NWIxIiwidXNlcl9pZCI6MTYyMDE1fQ.Fni1u4KwcXpKg7KnvXsdpWq8KQC6aViPAobVehHRqtY"
+//   },
+// };
+
 const sectionSync = async (req, res) => {
   switch (req.method) {
     case "POST":
